@@ -1,0 +1,63 @@
+# --- Secrets & local config (never commit) ---
+.env
+.env.*
+!.env.example
+*.pem
+secrets.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+venv310/
+env/
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.npm
+*.tsbuildinfo
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Local ML / checkpoints (large binaries) ---
+backend/pythonModel/venv/
+backend/pythonModel/venv310/
+backend/pythonModel/t5_local_model/
+backend/pythonModel/t5_local_model_base/
+**/checkpoint-*/
+**/*.safetensors
+**/*.bin
+**/*.pt
+**/*.pth
+**/*.ckpt
+**/*.onnx
+**/*.h5
+**/*.pb
+# Hugging Face / torch cache if created under project
+.cache/
+huggingface/
+
+# --- IDE / OS ---
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
