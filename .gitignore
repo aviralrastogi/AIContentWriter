@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+venv310/
+
+# Node / frontend build
+node_modules/
+dist/
+
+# Local ML envs & weights (too large for GitHub)
+backend/pythonModel/venv/
+backend/pythonModel/venv310/
+backend/pythonModel/t5_local_model/
+backend/pythonModel/t5_local_model_base/
+**/*.safetensors
+**/*.bin
+**/checkpoint-*/
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
