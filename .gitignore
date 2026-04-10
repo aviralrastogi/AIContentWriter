@@ -51,7 +51,6 @@ backend/pythonModel/t5_local_model_base/
 **/*.onnx
 **/*.h5
 **/*.pb
-# Hugging Face / torch cache if created under project
 .cache/
 huggingface/
 
